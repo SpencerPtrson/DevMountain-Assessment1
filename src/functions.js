@@ -40,6 +40,9 @@ function fullName(firstName, lastName) {
 //   generateSentence('Kay', 'coffee', 'the local cafe');
 //   => 'Kay was drinking coffee at the local cafe.'
 function generateSentence(person, beverage, location) {
+  person = person.toUpperCase();
+  beverage = beverage.toUpperCase();
+  location = location.toUpperCase();
   return `${person} was drinking ${beverage} at ${location}`;
 }
 
@@ -69,7 +72,7 @@ function censorVowels(string) {
 
   console.log(newString);
   return newString;
-}
+} // WORKING
 
 // Return the given string in sticky case.
 // Ex.:
@@ -89,7 +92,7 @@ function stickyCase(string) {
 
   console.log(newString);
   return newString;
-}
+} // WORKING
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
 // English where characters are replaced by numbers or symbols. For this
@@ -133,7 +136,7 @@ function leetspeak(string) {
   }
 
   return newString;
-}
+} // 
 
 export {
   approximatelyEqual,
