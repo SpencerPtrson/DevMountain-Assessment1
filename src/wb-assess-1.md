@@ -225,7 +225,9 @@ Functions can be used to create named blocks of code that can be executed/reused
 **_What is the difference between `console.log` and `return`?_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Console.log(): prints an output to the screen 
+
+
 ```
 
 **_What's the difference between defining and calling a function?_**
