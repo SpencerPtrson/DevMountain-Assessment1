@@ -124,7 +124,7 @@ function smallestNItems(items, n) {
 
   console.log(smallestNArr);  
   return smallestNArr;
-}
+} // WORKING
 
 function compareNumbers(num1, num2) {
   return num1 - num2;
