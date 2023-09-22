@@ -112,15 +112,22 @@ function findWordsStartingWith(words, letter) {
 //   smallestNItems([1, 30, 4, 21, 100000], 3);
 //   => [21, 4, 1]
 function smallestNItems(items, n) {
-  let newArr = items.sort();
-  let newSmallestArr = [];
+  // MDN says that you can compare numeric strings with function compareNumbers(a, b) { return a - b; }
+  let newSortedArr = items.sort(compareNumbers);
+  console.log(newSortedArr);
 
+
+  let smallestNArr = [];
   for (let i = n - 1; i >= 0; i--) {
-    console.log(newArr[i]);
-    newSmallestArr.push(newArr[i]);
+    smallestNArr.push(newSortedArr[i]);
   }
 
-  return newSmallestArr;
+  console.log(smallestNArr);  
+  return smallestNArr;
+}
+
+function compareNumbers(num1, num2) {
+  return num1 - num2;
 }
 
 // Search for a value in the array and return its index. If the value appears
@@ -153,7 +160,7 @@ function range(start, stop) {
   }
 
   return newArr;
-}
+} // WORKING
 
 export {
   bWords,
