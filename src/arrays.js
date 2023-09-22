@@ -11,6 +11,8 @@ function greaterThanTen(numbers) {
     }
   }
 
+  return doubleDigitArray;
+
 }
 
 // Given an array of strings, return all words that start with 'b' or 'B'.
