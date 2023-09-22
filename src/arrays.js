@@ -102,7 +102,8 @@ function findWordsStartingWith(words, letter) {
   }
 
   return newArr;
-}
+} // WORKING
+
 
 // Return the `n` smallest values in the array in descending order (largest
 // numbers first). Assume that `n` will always be less than the length of the
@@ -111,26 +112,15 @@ function findWordsStartingWith(words, letter) {
 //   smallestNItems([1, 30, 4, 21, 100000], 3);
 //   => [21, 4, 1]
 function smallestNItems(items, n) {
-  let newArr = [];
+  let newArr = items.sort();
+  let newSmallestArr = [];
 
-  // sort items array into largest->smallest
-  newArr.push(items[0]);
-  for (let i = 1; i < items.length; i++) {
-    // if the value is bigger/equal-to than the first value, insert it at the beginning of the new array
-    if (items[i] > newArr[0] || items[i] === newArr[0] ) {
-      newArr.unshift(items[i]);
-    }
-    // if the item is smaller than the first element, add it to the end of the array
-    else if (items[i] < newArr[0]) {
-      newArr.push(items[i]);
-    }
+  for (let i = n - 1; i >= 0; i--) {
+    console.log(newArr[i]);
+    newSmallestArr.push(newArr[i]);
   }
 
-return newArr;
-  // get the last n items of the array
-  let returnValues = [];
-  
-
+  return newSmallestArr;
 }
 
 // Search for a value in the array and return its index. If the value appears
