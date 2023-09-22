@@ -2,8 +2,9 @@
 // Ex.:
 //   greaterThanTen([1, 2, 3, 11, 12, 13]);
 //   => [11, 12, 13]
-function greaterThanTen(numbers) {
 
+// WORKING
+function greaterThanTen(numbers) {
   let doubleDigitArray = [];
   for (let number of numbers) {
     if (number > 10) {
@@ -12,7 +13,6 @@ function greaterThanTen(numbers) {
   }
 
   return doubleDigitArray;
-
 }
 
 // Given an array of strings, return all words that start with 'b' or 'B'.
@@ -20,12 +20,11 @@ function greaterThanTen(numbers) {
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
 function bWords(words) {
-
   let newArr = [];
 
-  for(let word in words) {
-    if (word.startsWith('b') || word.startsWith('B')) {
-      newArr.push(word);
+  for (let i = 0; i < words.length; i++) {    
+    if (words[i].startsWith('b') || words[i].startsWith('B')) {
+      newArr.push(words[i]);
     }
   }
 
@@ -37,6 +36,8 @@ function bWords(words) {
 // Ex.:
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
+
+// WORKING
 function extend(originalArray, additionalItems) {
 
   for (let item in additionalItems) {
@@ -50,8 +51,9 @@ function extend(originalArray, additionalItems) {
 // Ex.:
 //   itemsWithLength(['a', 'bbb', 'cccc', 'dddddd', 'eee'], 3);
 //   => ['bbb', 'eee']
-function itemsWithLength(items, length) {
 
+// WORKING
+function itemsWithLength(items, length) {
   let newArr = [];
 
   for (let item of items) {
@@ -67,6 +69,8 @@ function itemsWithLength(items, length) {
 // Ex.:
 //   everyOtherItem(['a', 'b', 'c', 'd', 'e']);
 //   => ['a', 'c', 'e']
+
+// WORKING
 function everyOtherItem(items) {
 
   let newArr = [];
