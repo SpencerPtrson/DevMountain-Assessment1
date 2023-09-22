@@ -120,7 +120,6 @@ function smallestNItems(items, n) {
   }
 
 return newArr;
-
   // get the last n items of the array
   let returnValues = [];
   
