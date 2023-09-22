@@ -43,18 +43,20 @@ function fullName(firstName, lastName) {
 //   generateSentence('Kay', 'coffee', 'the local cafe');
 //   => 'Kay was drinking coffee at the local cafe.'
 
-
-function generateSentence(person, beverage, location) {
-  return `${person} was drinking ${beverage} at ${location}`;
-}
-
-/*
 function generateSentence(person, beverage, location) {
   person = person.toUpperCase();
   beverage = beverage.toUpperCase();
   location = location.toUpperCase();
   return `${person} was drinking ${beverage} at ${location}`;
 }
+
+
+/*
+
+function generateSentence(person, beverage, location) {
+  return `${person} was drinking ${beverage} at ${location}`;
+}
+
 */
 
 
