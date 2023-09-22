@@ -40,7 +40,8 @@ function divisibleByEither(a, b, c) {
     }
     console.log(divisibleArr);
     return divisibleArr;
-  } // WORKING
+} // WORKING
+
 
 // Compress a string using the rules below and return the result. To compress a
 // string, replace consecutive duplicate characters with a number and the
@@ -93,7 +94,7 @@ function compressString(string) {
     }
     console.log(finalString);
     return finalString;
-}
+} // WORKING
 
 
 export { commonStrings, compressString, divisibleByEither };
