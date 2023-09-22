@@ -47,7 +47,7 @@ function generateSentence(person, beverage, location) {
   person = person.toUpperCase();
   beverage = beverage.toUpperCase();
   location = location.toUpperCase();
-  return `${person} was drinking ${beverage} at ${location}`;
+  return `${person} was drinking ${beverage} at ${location}.`;
 }
 
 
