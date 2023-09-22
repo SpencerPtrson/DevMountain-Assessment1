@@ -4,7 +4,8 @@
 //   => 5
 function divide(x, y) {
   return x / y;
-}
+} // WORKING
+
 
 // Return the average of x and y.
 // Here, the average of x and y is the *mean* of x and y. In other words, it's
@@ -14,7 +15,7 @@ function divide(x, y) {
 //   => 6
 function average(x, y) {
   return (x + y) / 2;
-}
+} // WORKING
 
 // Return true if x and y are mostly equivalent up to a tolerance of 0.001.
 // In other words, return true if the aboslute value of x - y is less than 0.001.
@@ -23,7 +24,7 @@ function average(x, y) {
 //   => true
 function approximatelyEqual(x, y) {
   return (Math.abs(x - y) < 0.001);
-}
+} // WORKING
 
 // Given a first name and last name, return a full name in the format "FIRST LAST"
 // Ex.:
@@ -31,7 +32,7 @@ function approximatelyEqual(x, y) {
 //   => 'John Doe'
 function fullName(firstName, lastName) {
   return `${firstName} ${lastName}`;
-}
+} // WORKING
 
 // Generate the sentence "PERSON was drinking BEVERAGE at LOCATION" using the
 // person, beverage and location provided.
@@ -54,7 +55,9 @@ function censorVowels(string) {
 // Ex.:
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
-function stickyCase(string) {}
+function stickyCase(string) {
+
+}
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
 // English where characters are replaced by numbers or symbols. For this
@@ -68,7 +71,37 @@ function stickyCase(string) {}
 // Ex.:
 //   leetspeak('javascript');
 //   => 'j4v45cr1p7'
-function leetspeak(string) {}
+function leetspeak(string) {
+  let newString = '';
+
+  for (let i = 0; i < string.length; i++) {
+    switch (string[i]) {
+      case 'a':
+        newString += '4';
+        break;
+      case 'e':
+        newString += '3';
+        break;
+      case 'i':
+        newString += '1';
+        break;
+      case 'o':
+        newString += '0';
+        break;
+      case 's':
+        newString += '5';
+        break;
+      case 't':
+        newString += '7';
+        break;
+      default:
+        newString += string[i];
+        break;
+    }
+  }
+
+  return newString;
+}
 
 export {
   approximatelyEqual,
