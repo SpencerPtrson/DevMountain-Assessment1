@@ -54,6 +54,46 @@ function divisibleByEither(a, b, c) {
 //   => '4s2b'
 //   compressString('ssssbbba');
 //   => '4s3ba'
-function compressString(string) {}
+function compressString(string) {
+
+    let uniqueCharacterArr = [];
+    // iterate through the string and make an array of each unique character
+    for (let i = 0; i < string.length; i++) {
+      if (!uniqueCharacterArr.includes(string[i])) {
+        uniqueCharacterArr.push(string[i]);
+      }
+    }
+  
+    console.log(uniqueCharacterArr);
+  
+    // iterate through the unique character array
+    for (let i = 0; i < uniqueCharacterArr.length; i++) {
+      let characterCount = 0;
+
+      // iterate through the original string, and get the count for each character
+      for (let j = 0; j < string.length; j++) {
+        if (string[j] === uniqueCharacterArr[i]) {
+          characterCount++;
+        }
+      }
+  
+      // Should now have a count of how many of the uniqueCharacterArr value there are       in the original string
+  
+      if (characterCount > 1) {
+          uniqueCharacterArr[i] = characterCount + uniqueCharacterArr[i];
+      }
+    }
+  
+    console.log(uniqueCharacterArr);
+  
+    let finalString = '';
+  
+    for (let element of uniqueCharacterArr) {
+      finalString += element;
+    }
+    console.log(finalString);
+    return finalString;
+}
+
 
 export { commonStrings, compressString, divisibleByEither };
