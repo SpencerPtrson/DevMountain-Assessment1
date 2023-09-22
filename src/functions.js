@@ -48,7 +48,27 @@ function generateSentence(person, beverage, location) {
 //   censorVowels('javascript');
 //   => 'j*v*scr*pt'
 function censorVowels(string) {
+  let newString = '';
 
+  for (let i = 0; i < string.length; i++) {
+    let capitalized = string[i].toUpperCase();
+
+    switch (capitalized) {
+      case 'A':
+      case 'E':
+      case 'I':
+      case 'O':
+      case 'U':
+        newString += '*';
+        break;
+      default:
+        newString += string[i];
+        break;
+    }
+  }
+
+  console.log(newString);
+  return newString;
 }
 
 // Return the given string in sticky case.
