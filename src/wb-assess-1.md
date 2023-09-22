@@ -225,7 +225,8 @@ Functions can be used to create named blocks of code that can be executed/reused
 **_What is the difference between `console.log` and `return`?_**
 
 ```
-Console.log(): prints an output to the screen 
+Console.log() prints a value to the console. When console.log() is used, the rest of the code continues as normal.
+'return' is mainly used inside of functions to return a value to the function call. If not given a value (return "something"), return sends "undefined" as its value. It also prevents any further function code executing and ends the function.
 
 
 ```
@@ -233,7 +234,10 @@ Console.log(): prints an output to the screen
 **_What's the difference between defining and calling a function?_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Defining a function is laying out specific code for the computer to execute whenever that function is called. Function definitions have parameters which are used as stand-in values for what the function needs to do. Function declarations have the syntax "function functionName(paramater, parameter2, ...) {}. Functions often return a value to the code that called it.
+
+Calling a function tells the computer which function code it needs to execute. When you call a function, you pass in arguments in order to set the function's parameter values. Calling a function is done with the syntax "functionName(argument, argument2, ...). Depending on the function, you may need to set a variable equal to the function's return value.
+
 ```
 
 ### B.2. Describe these data types.
@@ -243,25 +247,26 @@ Write a short description of the following data types:
 **_String_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+A string is a character array. They're used for holding and using text values. They're surrounded either by apostrophes('), quotation marks("), or back tics (``).
 ```
 
 **_Number_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Number variables hold mathematical values such as 3.14, -9, etc. They're used for calculations.
 ```
 
 **_Boolean_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Booleans variables can hold either true or false values. They're useful for determing whether to execute code based on binary conditions.
+
 ```
 
 **_Array_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Arrays are collections / lists of variables. They can hold a variety of data types, even including other arrays. Each element in an array can be accessed via arrayName[indexNum], and index numbers for arrays start at 0. They don't have defined sizes, as they can be shrunk / grown with various functions like .pop(), .shift(), .etc.
 ```
 
 ### B.3. Trace the value of `x`
@@ -284,7 +289,7 @@ completed for you.
 
 ```
 Initial values: y = 0, x = 5
-1:              y = 1, x = ??
-2:              y = 2, x = ??
-3:              y = 3, x = ??
+1:              y = 1, x = 10
+2:              y = 2, x = 15
+3:              y = 3, x = 20
 ```
