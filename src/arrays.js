@@ -97,7 +97,7 @@ function findWordsStartingWith(words, letter) {
 
   for (let i = 0; i < words.length; i++) {    
     if (words[i].startsWith(letter)) {
-      newArr.push(words[i]);
+      newArr.push(i);
     }
   }
 
