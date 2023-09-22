@@ -56,7 +56,19 @@ function censorVowels(string) {
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
 function stickyCase(string) {
+  let newString = '';
 
+  for (let i = 0; i < string.length; i++) {
+    if (i % 2 === 0) {
+      newString += string[i].toLowerCase();
+    }
+    else {
+      newString += string[i].toUpperCase();
+    }
+  }
+
+  console.log(newString);
+  return newString;
 }
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
