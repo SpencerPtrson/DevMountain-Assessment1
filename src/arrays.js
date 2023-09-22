@@ -3,7 +3,6 @@
 //   greaterThanTen([1, 2, 3, 11, 12, 13]);
 //   => [11, 12, 13]
 
-// WORKING
 function greaterThanTen(numbers) {
   let doubleDigitArray = [];
   for (let number of numbers) {
@@ -13,12 +12,14 @@ function greaterThanTen(numbers) {
   }
 
   return doubleDigitArray;
-}
+} // WORKING
+
 
 // Given an array of strings, return all words that start with 'b' or 'B'.
 // Ex.:
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
+
 function bWords(words) {
   let newArr = [];
 
@@ -29,7 +30,8 @@ function bWords(words) {
   }
 
   return newArr;
-}
+} // WORKING
+
 
 // Add all the elements from additionalItems to the end of originalArray.
 // Return the originalArray..
@@ -37,7 +39,6 @@ function bWords(words) {
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
 
-// WORKING
 function extend(originalArray, additionalItems) {
 
   for (let item in additionalItems) {
@@ -45,14 +46,14 @@ function extend(originalArray, additionalItems) {
   }
 
   return originalArray;
-}
+} // WORKING
+
 
 // Return an array of all items with the given length.
 // Ex.:
 //   itemsWithLength(['a', 'bbb', 'cccc', 'dddddd', 'eee'], 3);
 //   => ['bbb', 'eee']
 
-// WORKING
 function itemsWithLength(items, length) {
   let newArr = [];
 
@@ -63,14 +64,14 @@ function itemsWithLength(items, length) {
   }
 
   return newArr;
-}
+} // WORKING
+
 
 // Return an array with every other element from the input array (start with index 0).
 // Ex.:
 //   everyOtherItem(['a', 'b', 'c', 'd', 'e']);
 //   => ['a', 'c', 'e']
 
-// WORKING
 function everyOtherItem(items) {
 
   let newArr = [];
@@ -82,7 +83,8 @@ function everyOtherItem(items) {
   }
 
   return newArr;
-}
+} // WORKING
+
 
 // Given a list of words and a letter, return the indexes of the words that
 // start with that letter. You can assume that the words and letter will always
@@ -91,12 +93,11 @@ function everyOtherItem(items) {
 //   findWordsStartingWith(['apple', 'banana', 'kiwi', 'pear', 'bacon'], 'b');
 //   => [1, 4]
 function findWordsStartingWith(words, letter) {
-
   let newArr = [];
 
-  for (let word of words) {
-    if (word.startsWith(letter)) {
-      newArr.push(word);
+  for (let i = 0; i < words.length; i++) {    
+    if (words[i].startsWith(letter)) {
+      newArr.push(words[i]);
     }
   }
 
