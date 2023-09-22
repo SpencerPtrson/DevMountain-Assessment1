@@ -17,6 +17,7 @@ function commonStrings(array1, array2) {
             // if array1 value and array2 value match and the shared array doesn't already hold the value
             // put it in the sharedArray
             if (array1[i] === array2[j] && !sharedArr.includes(array1[i])) {
+                console.log('hit')
                 sharedArr.push(array1[i]);
             }
         }
@@ -24,6 +25,9 @@ function commonStrings(array1, array2) {
     console.log(sharedArr);
     return sharedArr;
 } // WORKING
+
+  commonStrings(['a', 'b', 'c'], ['a', 'd', 'e']);
+
 
 // Given three numbers, return a list of numbers from 1 to 100 that are
 // divisible by at least one of a, b or c.
