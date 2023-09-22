@@ -17,6 +17,7 @@ function average(x, y) {
   return (x + y) / 2;
 } // WORKING
 
+
 // Return true if x and y are mostly equivalent up to a tolerance of 0.001.
 // In other words, return true if the aboslute value of x - y is less than 0.001.
 // Ex.:
@@ -26,6 +27,7 @@ function approximatelyEqual(x, y) {
   return (Math.abs(x - y) < 0.001);
 } // WORKING
 
+
 // Given a first name and last name, return a full name in the format "FIRST LAST"
 // Ex.:
 //   fullName('John', 'Doe');
@@ -34,17 +36,28 @@ function fullName(firstName, lastName) {
   return `${firstName} ${lastName}`;
 } // WORKING
 
+
 // Generate the sentence "PERSON was drinking BEVERAGE at LOCATION" using the
 // person, beverage and location provided.
 // Ex.:
 //   generateSentence('Kay', 'coffee', 'the local cafe');
 //   => 'Kay was drinking coffee at the local cafe.'
+
+
+function generateSentence(person, beverage, location) {
+  return `${person} was drinking ${beverage} at ${location}`;
+}
+
+/*
 function generateSentence(person, beverage, location) {
   person = person.toUpperCase();
   beverage = beverage.toUpperCase();
   location = location.toUpperCase();
   return `${person} was drinking ${beverage} at ${location}`;
 }
+*/
+
+
 
 // Return the given string with all vowels replced with '*' characters.
 // Ex.:
@@ -74,6 +87,7 @@ function censorVowels(string) {
   return newString;
 } // WORKING
 
+
 // Return the given string in sticky case.
 // Ex.:
 //   stickyCase('hello world');
@@ -93,6 +107,7 @@ function stickyCase(string) {
   console.log(newString);
   return newString;
 } // WORKING
+
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
 // English where characters are replaced by numbers or symbols. For this
@@ -136,7 +151,8 @@ function leetspeak(string) {
   }
 
   return newString;
-} // 
+} // WORKING
+
 
 export {
   approximatelyEqual,
